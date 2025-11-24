@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import heroImage from "@/public/hero-dental.jpg";
+import heroImage from "@/public/recepcao2.jpeg";
 
 const Hero = () => {
   const scrollToContact = () => {

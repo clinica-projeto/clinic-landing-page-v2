@@ -7,10 +7,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 // import Autoplay from "embla-carousel-autoplay";
-import clinic1 from "@/public/clinic-1.jpg";
-import clinic2 from "@/public/clinic-2.jpg";
-import clinic3 from "@/public/clinic-3.jpg";
-import clinic4 from "@/public/clinic-4.jpg";
+import clinic1 from "@/public/recepcao1.jpeg";
+import clinic2 from "@/public/recepcao2.jpeg";
+import clinic3 from "@/public/mesa-cafe.jpeg";
+import clinic4 from "@/public/fora1.jpeg";
 
 const stats = [
   { icon: Users, value: "5.000+", label: "Pacientes Atendidos" },
