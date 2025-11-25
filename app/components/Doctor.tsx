@@ -13,7 +13,7 @@ import doctor3 from "@/public/foto-dra-3.jpg";
 import doctor4 from "@/public/foto-dra-4.jpg";
 
 const stats = [
-  { icon: GraduationCap, value: "CRO-SP 12345", label: "Registro Profissional" },
+  { icon: GraduationCap, value: "CRO-SP 98153", label: "Registro Profissional" },
   { icon: Award, value: "20+", label: "Cursos e Especializações" },
   { icon: Sparkles, value: "15+", label: "Anos de Experiência" },
   { icon: Heart, value: "3.000+", label: "Sorrisos Transformados" },
@@ -84,9 +84,8 @@ const Doctor = () => {
               Dra. Mariane Bertolo
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Cirurgiã-dentista formada pela Fundação Hermínio Ometto (FHO), com especialização em Harmonização Orofacial 
-              e Estética Dental. Com mais de 15 anos de experiência, a Dra. Mariane dedica-se a transformar sorrisos 
-              e elevar a autoestima de seus pacientes.
+              Cirurgiã-dentista formada pela Fundação Hermínio Ometto (FHO), com especialização em Ortodontia. Com mais de 15 anos de experiência, 
+              a Dra. Mariane dedica-se a transformar sorrisos e elevar a autoestima de seus pacientes.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
               Sua abordagem combina técnica avançada com um olhar humanizado, sempre priorizando o bem-estar e a satisfação de cada paciente. Acredita que um sorriso bonito e saudável é a chave para a confiança e qualidade de vida.
