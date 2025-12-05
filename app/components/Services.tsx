@@ -1,28 +1,38 @@
 'use cliente';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Smile, Sparkles, Shield, Heart } from "lucide-react";
+import { Braces, Sparkles, ShieldCheck, Layers, Brush, Component } from "lucide-react";
 
 const services = [
   {
-    icon: Smile,
-    title: "Odontologia Estética",
-    description: "Lentes de contato, facetas, clareamento dental e restaurações estéticas para um sorriso perfeito.",
+    icon: Braces,
+    title: "Ortodontia",
+    description: "Alinhamento dos dentes com aparelhos ortodônticos para um sorriso harmonioso.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Endodontia",
+    description: "Tratamento de canal com técnicas avançadas para salvar dentes danificados.",
   },
   {
     icon: Sparkles,
-    title: "Estética Facial",
-    description: "Harmonização facial, preenchimento, toxina botulínica e procedimentos para realçar sua beleza natural.",
+    title: "Clareamento Dental",
+    description: "Clareamento dental com técnicas avançadas para um sorriso mais brilhante.",
   },
   {
-    icon: Shield,
-    title: "Implantodontia",
-    description: "Implantes dentários com tecnologia de ponta para recuperar seu sorriso e função mastigatória.",
+    icon: Layers,
+    title: "Lente de Contato",
+    description: "Lentes de contato em resina e porcelana.",
   },
   {
-    icon: Heart,
-    title: "Odontologia Geral",
-    description: "Tratamentos preventivos, restaurações, tratamento de canal e acompanhamento completo da sua saúde bucal.",
+    icon: Brush,
+    title: "Limpeza",
+    description: "Raspagem e profilaxia para manter a saúde bucal.",
+  },
+  {
+    icon: Component,
+    title: "Prótese dental",
+    description: "Prótese dentária para restaurar a função e o sorriso.",
   },
 ];
 
@@ -39,11 +49,11 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Card key={index} className="rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-secondary" />

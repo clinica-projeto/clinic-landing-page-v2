@@ -30,11 +30,6 @@ const Doctor = () => {
                 align: "start",
                 loop: true,
               }}
-              // plugins={[
-              //   Autoplay({
-              //     delay: 3000,
-              //   }),
-              // ]}
               className="w-full"
             >
               <CarouselContent>
@@ -94,7 +89,7 @@ const Doctor = () => {
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
-                  <div key={index} className="text-center p-4 bg-background rounded-lg">
+                  <div key={index} className="text-center p-4 bg-background rounded-2xl shadow-sm">
                     <Icon className="w-8 h-8 text-secondary mx-auto mb-2" />
                     <div className="text-2xl font-bold text-primary">{stat.value}</div>
                     <div className="text-sm text-muted-foreground">{stat.label}</div>

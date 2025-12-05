@@ -17,7 +17,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage.src})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
+        <div className="absolute inset-0 bg-linear-to-r from-background/95 via-background/80 to-background/40" />
       </div>
       
       <div className="container mx-auto relative z-10 px-14">
@@ -30,7 +30,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
-              size="lg" 
+              size="lg"
               onClick={scrollToContact}
               className="bg-primary hover:bg-secondary text-primary-foreground text-lg px-8"
             >

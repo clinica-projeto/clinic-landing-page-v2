@@ -34,7 +34,7 @@ const Feedbacks = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {feedbacks.map((feedback, index) => (
-            <Card key={index} className="border-border">
+            <Card key={index} className="rounded-2xl">
               <CardContent className="pt-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(feedback.rating)].map((_, i) => (

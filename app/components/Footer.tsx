@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import logo from "@/public/logo-sem-brackground-claro.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,7 +9,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">São Marcos Odontologia</h3>
+            {/* <h3 className="text-xl font-bold mb-4">São Marcos Odontologia</h3> */}
+            <img 
+              src={logo.src} 
+              alt="Logotipo consultório" 
+              className="h-12 w-auto object-contain"
+            />
             <p className="text-primary-foreground/80 text-sm">
               Excelência em tratamentos odontológicos e estética facial.
             </p>

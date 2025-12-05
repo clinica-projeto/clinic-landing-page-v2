@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/public/logo-sem-background.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,12 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border px-14">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-primary">São Marcos Odontologia</h1>
+          {/* <h1 className="text-2xl font-bold text-primary">São Marcos Odontologia</h1> */}
+          <img 
+            src={logo.src} 
+            alt="Logotipo consultório" 
+            className="h-15 w-auto object-contain"
+          />
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
@@ -32,10 +38,17 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("sobre")} className="text-foreground hover:text-secondary transition-colors">
               Sobre
             </button>
+            <button onClick={() => scrollToSection("doutora")} className="text-foreground hover:text-secondary transition-colors">
+              Doutora
+            </button>
             <button onClick={() => scrollToSection("depoimentos")} className="text-foreground hover:text-secondary transition-colors">
               Depoimentos
             </button>
-            <Button onClick={() => scrollToSection("contato")} className="bg-primary hover:bg-secondary">
+            <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-secondary transition-colors">
+              Contato
+            </button>
+
+            <Button className="bg-primary hover:bg-secondary">
               Agendar Consulta
             </Button>
           </div>
